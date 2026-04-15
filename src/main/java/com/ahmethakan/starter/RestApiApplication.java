@@ -1,13 +1,15 @@
-package com.ahmethakan.restApi;
+package com.ahmethakan.starter;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
+@ComponentScan(basePackages = {"com.ahmethakan"})
 @SpringBootApplication
 public class RestApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiApplication.class, args);
+        SpringApplication.run(RestApiApplication.class, args);
 	}
 
 }
